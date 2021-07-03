@@ -82,13 +82,12 @@
 
 
         <!-- Realizo los Calculos -->
-        <script src="C_Grafica.js"></script>
+        <script src="Clase_Grafica.js"></script>
         <script>
             const test1 = new Grafica(5000, 7, 0.001, 60, 16.19, 4, 5, 0.755)
-                const resultado = test1.Calcular();
-                console.log(test1.ejex)
-                console.log(test1.ejey)
-
+            const resultado = test1.Calcular();
+            console.log(test1.ejex)
+            console.log(test1.ejey)
         </script>
         <!-- Muestro los Calculos en la grafica -->
         <script src="grafica.js"></script>
@@ -102,14 +101,15 @@
                 v5= parseFloat(document.getElementById("Do").value);
                 v6= parseFloat(document.getElementById("Pm").value);
                 v7= parseFloat(document.getElementById("Pe").value);
-                v8= parseFloat(document.getElementById("y").value);4
+                v8= parseFloat(document.getElementById("y").value);
+
                 const test1 = new Grafica(v1, v2, v3, v4, v5, v6, v7, v8)
                 const resultado = test1.Calcular();
                 console.log(test1.ejex)
                 console.log(test1.ejey)
-                grap.xAxis[0].setCategories(test1.ejex);
-                grap.series[0].setData(test1.ejey);
                 
+                grap.xAxis[0].setCategories(test1.ejex);
+                grap.series[0].setData(test1.ejey);                
             }
 
         </script>
