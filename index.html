@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Curva</title>
+
+    <link rel="stylesheet" href="grafica.css">
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+</head>
+
+<body>
+    <figure class="highcharts-figure">
+        <div id="container"></div>
+    </figure>
+
+
+    <!-- Realizo los Calculos -->
+    <script src="C_Grafica.js"></script>
+    <script>
+        const test1 = new Grafica(5000, 7, 0.001, 60, 16.19, 4, 6, 0.755)
+        const resultado = test1.Calcular();
+        console.log(test1.ejex)
+        console.log(test1.ejey)
+    </script>
+    <!-- Muestro los Calculos en la grafica -->
+    <script src="grafica.js"></script>
+</body>
+
+</html>
