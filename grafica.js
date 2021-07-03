@@ -1,4 +1,4 @@
-Highcharts.chart('container', {
+var grap =Highcharts.chart('container', {
 
     title: {
         text: 'Calculo Curva de no se que...jajaj'
@@ -15,7 +15,7 @@ Highcharts.chart('container', {
     },
 
     xAxis: {
-        categories: test1.ejex
+            categories:test1.ejex
     },
 
     legend: {
